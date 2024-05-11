@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,19 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-900 md:bg-gradient-to-r from-slate-950 from-30% to-slate-900 text-white">
+
+<body class="bg-slate-900 md:bg-gradient-to-r from-slate-900 from-20% to-slate-800 text-white">
 
     <!-- Nav Bar -->
-    <header class="flex h-12 bg-slate-700/20">
+    <header class="h-12 px-12 flex bg-slate-800/95 fixed top-0 w-full shadow-md">
         
-        <div class="w-3/5 px-4 text-2xl font-my-name  flex items-center">
+        <div class="w-3/5 text-2xl font-my-name  flex items-center">
         <a href="#home" class="text-sky-400">Vipin
             <span class="text-sky-500">Yadav</span>
         </a>
         </div>
 
-        <div class="w-2/5 flex justify-between items-center px-4 font-normal">
+        <div class="w-2/5 flex justify-between items-center font-normal">
             <a href="#home" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Home</a>
             <a href="#about" class="hover:text-sky-400 hover:border-b-2 border-sky-500">About</a>
             <a href="#education" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Education</a>
@@ -31,6 +33,54 @@
             <i class="fa-solid fa-bars md:hidden" onclick="handleMenu()"></i>
         </button>
     </header>
+
+    <main class="px-12">
+
+        <!-- HOME Section -->
+        <section class="flex flex-col-reverse md:h-full md:flex md:flex-row">
+            <div class="w-full h-1/2 md:my-36 md:ml-14 md:w-1/2 flex flex-col">
+                <div>
+                    <h1 class="text-4xl font-bold">Hi, It's 
+                        <span class="text-red-700 font-bold">Vipin</span>
+                    </h1>
+                    <p class="my-2 text-2xl">I'm Front End Developer</p>
+                    <p class="text-l mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptatem ab consequatur officia accusamus impedit pariatur voluptate ipsam vel praesentium. Debitis deserunt consequatur sapiente dolores voluptatum ipsa quas odit harum!</p>
+                </div>
+
+                <div class="flex gap-7 mt-5">
+                    <a href="#linkedin">
+                        <img class="w-7 h-7" src="./assets/icons/linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="#github">
+                        <img class="w-7 h-7" src="./assets/icons/github.png" alt="github">
+                    </a>
+                    <a href="#leetcode">
+                        <img class="w-7 h-7" src="./assets/icons/leetcode.png" alt="leetcode">
+                    </a>
+                    <a href="#hackerrank">
+                        <img class="w-7 h-7" src="./assets/icons/hackerrank.png" alt="hackerrank">
+                    </a>
+                </div>
+
+                <div class="mt-14">
+                    <button class="bg-gray-700 w-24 h-10 mr-6 rounded-xl drop-shadow-[0_5px_5px_rgba(255,255,255,0.15)] border-solid border-2 border-gray-400 hover:bg-gray-800 hover:border-gray-500 active:bg-gray-700 active:border-gray-400">
+                        Resume
+                    </button>
+                    <button class="bg-gray-700 w-32 h-10 rounded-xl drop-shadow-[0_5px_5px_rgba(255,255,255,0.15)] border-solid border-2 border-gray-400 hover:bg-gray-800 hover:border-gray-500 active:bg-gray-700 active:border-gray-400">
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-full h-1/2 md:w-1/2 flex items-center justify-center">
+                <img class="h-60 w-60 my-24 rounded-full md:h-72 md:w-72 md:my-32 md:ml-20 border-solid border-2 border-sky-600 drop-shadow-[0_10px_15px_rgba(3,44,252,0.25)]" src="./assets/profile.jpg" alt="profile-img">
+            </div>
+        </section>
+
+
+
+    </main>
+
 
     
 
