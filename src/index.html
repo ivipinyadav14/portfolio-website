@@ -5,59 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>My Portfolio</title>
+    <link rel="icon" href="./assets/web-logo.jpg">
+    <title>VIPIN</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-slate-900 md:bg-gradient-to-r from-slate-900 from-20% to-slate-800 text-white">
+<body class="bg-slate-900 md:bg-gradient-to-tr from-slate-900 from-20% to-slate-800 text-white">
 
     <!-- Nav Bar -->
-    <header class="px-12 h-12 flex bg-slate-800/95 fixed top-0 w-full shadow-md">
+    <header class="px-3 md:px-12 h-12 flex bg-slate-800 bg-opacity-70 fixed top-0 z-10 backdrop-blur-md w-full shadow-md">
         
-        <div class="w-3/5 text-2xl font-my-name  flex items-center">
-        <a href="#home" class="text-sky-400">Vipin
+        <div class="w-1/3 md:w-3/5 text-lg md:text-2xl font-my-name  flex items-center">
+        <a href="#home-section" class="text-sky-400">Vipin
             <span class="text-sky-500">Yadav</span>
         </a>
         </div>
 
-        <div class="w-2/5 flex justify-between items-center font-normal">
-            <a href="#home" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Home</a>
-            <a href="#about" class="hover:text-sky-400 hover:border-b-2 border-sky-500">About</a>
-            <a href="#education" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Education</a>
-            <a href="#skills" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Skills</a>
-            <a href="#projects" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Projects</a>
-            <a href="#contact" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Contact</a>
+        <div class="w-2/3 md:w-2/5 flex justify-between items-center font-normal text-sm md:text-lg">
+            <a href="#home-section" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Home</a>
+            <!-- <a href="#about" class="hover:text-sky-400 hover:border-b-2 border-sky-500">About</a> -->
+            <a href="#education-section" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Education</a>
+            <a href="#skills-section" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Skills</a>
+            <a href="#projects-section" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Projects</a>
+            <a href="#contact-section" class="hover:text-sky-400 hover:border-b-2 border-sky-500">Contact</a>
         </div>
     
         <button >
-            <i class="fa-solid fa-bars md:hidden" onclick="handleMenu()"></i>
+            <i class="fa-solid fa-bars hidden" onclick="handleMenu()"></i>
         </button>
     </header>
 
     <main class="mx-12">
 
         <!-- HOME Section -->
-        <section class="flex flex-col-reverse md:h-full md:flex md:flex-row">
-            <div class="w-full h-1/2 md:my-36 md:ml-14 md:w-1/2 flex flex-col">
+        <section id="home-section" class="flex flex-col-reverse md:h-full md:flex md:flex-row">
+            <div class="w-full h-1/2 md:mt-36 md:ml-14 md:w-1/2 flex flex-col">
                 <div>
                     <h1 class="text-4xl font-bold">Hi, It's 
                         <span class="text-red-700 font-bold">Vipin</span>
                     </h1>
-                    <p class="my-2 text-2xl">I'm Front End Developer</p>
-                    <p class="text-l mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptatem ab consequatur officia accusamus impedit pariatur voluptate ipsam vel praesentium. Debitis deserunt consequatur sapiente dolores voluptatum ipsa quas odit harum!</p>
+                    <p class="my-2 text-2xl">I'm a Developer</p>
+                    <p class="text-l mb-4">A computer science student with a focus on front-end development. I love creating intuitive and visually appealing user interfaces, and I have completed several projects. Welcome to my portfolio!"</p>
                 </div>
 
                 <div class="flex gap-7 mt-5">
-                    <a href="#linkedin">
+                    <a href="https://www.linkedin.com/in/ivipinyadav14/" target="_blank">
                         <img class="w-7 h-7" src="./assets/icons/linkedin.png" alt="linkedin">
                     </a>
-                    <a href="#github">
+                    <a href="https://github.com/ivipinyadav14" target="_blank">
                         <img class="w-7 h-7" src="./assets/icons/github.png" alt="github">
                     </a>
-                    <a href="#leetcode">
+                    <a href="https://leetcode.com/u/ivipinyadav14/" target="_blank">
                         <img class="w-7 h-7" src="./assets/icons/leetcode.png" alt="leetcode">
                     </a>
-                    <a href="#hackerrank">
+                    <a href="https://www.hackerrank.com/profile/ivipinyadav14" target="_blank">
                         <img class="w-7 h-7" src="./assets/icons/hackerrank.png" alt="hackerrank">
                     </a>
                 </div>
@@ -66,9 +67,12 @@
                     <button class="w-24 h-10 mr-6 rounded-xl bg-gray-800 text-gray-300 drop-shadow-[0_5px_5px_rgba(255,255,255,0.15)] border-solid border-2 border-gray-600 hover:bg-gray-700 hover:border-gray-500 hover:text-white active:bg-gray-700 active:border-gray-600 active:text-gray-200">
                         Resume
                     </button>
-                    <button class="w-32 h-10 rounded-xl bg-gray-800 text-gray-300 drop-shadow-[0_5px_5px_rgba(255,255,255,0.15)] border-solid border-2 border-gray-600 hover:bg-gray-700 hover:border-gray-500 hover:text-white active:bg-gray-700 active:border-gray-600 active:text-gray-200">
-                        Contact Me
-                    </button>
+                    <a href="#contact-section">
+                        <button class="w-32 h-10 rounded-xl bg-gray-800 text-gray-300 drop-shadow-[0_5px_5px_rgba(255,255,255,0.15)] border-solid border-2 border-gray-600 hover:bg-gray-700 hover:border-gray-500 hover:text-white active:bg-gray-700 active:border-gray-600 active:text-gray-200">
+                            Contact Me
+                        </button>
+                    </a>
+                    
                 </div>
             </div>
 
@@ -78,8 +82,9 @@
         </section>
 
         <!-- Eduction Section  -->
-        <section class="md:mx-12 ">
-            <div class="h-12 my-20 md:my-0 md:mb-16 border-b-2 border-gray-600">
+        <div id="education-section" class="h-12 mt-4"></div>     <!-- Nav section target here-->
+        <section class="md:mx-12 mb-20">
+            <div class="h-12 my-20 md:my-0 md:mb-28 border-b-2 border-gray-600">
                 <h1 class="font-semibold text-center text-3xl text-gray-100">EDUCATION</h1>
             </div>
 
@@ -110,8 +115,9 @@
         </section>
 
         <!-- Skills Section  -->
-        <section class="md:mx-12 ">
-            <div class="h-12 my-20 border-b-2 border-gray-600">
+        <div id="skills-section" class="h-12"></div>     <!-- Nav section target here-->
+        <section class="md:mx-12 mb-20">
+            <div class="h-12 mb-20 md:mb-24 border-b-2 border-gray-600">
                 <h1 class="font-semibold text-center text-3xl text-gray-100">SKILLS</h1>
             </div>
 
@@ -182,9 +188,10 @@
         </section>
 
         <!-- Projects Section  -->
-        <section class="md:mx-12 ">
+        <div id="projects-section" class="h-12"></div>     <!-- Nav section target here-->
+        <section class="md:mx-12 mb-20">
 
-            <div class="h-12 my-20 border-b-2 border-gray-600">
+            <div class="h-12 mb-20 border-b-2 border-gray-600">
                 <h1 class="font-semibold text-center text-3xl text-gray-100">PROJECTS</h1>
             </div>
 
@@ -205,7 +212,7 @@
                             <a href="#link1"><i class="fa-solid fa-globe"></i></a>
                         </div>
                         <div class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:bg-gray-800 hover:border-gray-200 active:bg-slate-900 active:border-slate-300">
-                            <a href="#link1"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://github.com/ivipinyadav14/youtube-transcript-summarizer" target="_blank"><i class="fa-solid fa-code"></i></a>
                         </div>
                     </div>
                 </div>
@@ -222,10 +229,14 @@
 
                     <div class="h-24 flex justify-between">
                         <div class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:bg-gray-800 hover:border-gray-200 active:bg-slate-900 active:border-slate-300">
-                            <a href="#link1"><i class="fa-solid fa-globe"></i></a>
+                            <a href="https://my-tictactoe-game-app.netlify.app/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
                         </div>
                         <div class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:bg-gray-800 hover:border-gray-200 active:bg-slate-900 active:border-slate-300">
-                            <a href="#link1"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://github.com/ivipinyadav14/tic-tac-toe" target="_blank">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -242,10 +253,14 @@
 
                     <div class="h-24 flex justify-between">
                         <div class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:bg-gray-800 hover:border-gray-200 active:bg-slate-900 active:border-slate-300">
-                            <a href="#link1"><i class="fa-solid fa-globe"></i></a>
+                            <a href="https://insta-web-clone.netlify.app/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
                         </div>
                         <div class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:bg-gray-800 hover:border-gray-200 active:bg-slate-900 active:border-slate-300">
-                            <a href="#link1"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://github.com/ivipinyadav14/insta-clone" target="_blank">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -255,12 +270,13 @@
         </section>
 
         <!-- Contacts Section  -->
+        <div id="contact-section" class="h-12"></div>     <!-- Nav section target here-->
         <Section class="md:mx-12">
-            <div class="h-12 my-20 border-b-2 border-gray-600">
+            <div class="h-12 mb-20 border-b-2 border-gray-600">
                 <h1 class="font-semibold text-center text-3xl text-gray-100">Contact</h1>
             </div>
 
-            <div class="mb-32">
+            <div class="mb-20 md:mb-36">
                 <div class="flex flex-row flex-wrap-reverse">
                   
                   <!-- Social Contacts  -->
@@ -281,16 +297,16 @@
                     <div class="mt-24">
                       <h2 class="mb-3 text-sm font-semibold text-neutral-200">Connect with me :</h2>
                       <div class="flex gap-10">
-                          <a href="#linkedin" class="text-3xl">
+                          <a href="https://www.linkedin.com/in/ivipinyadav14/" target="_blank" class="text-3xl">
                               <i class="fa-brands fa-linkedin"></i>
                           </a>
-                          <a href="#github" class="text-3xl">
+                          <a href="https://github.com/ivipinyadav14" target="_blank" class="text-3xl">
                               <i class="fa-brands fa-github"></i>
                           </a>
-                          <a href="#tweet" class="text-3xl">
+                          <a href="https://x.com/vipinyadav_14" target="_blank" class="text-3xl">
                               <i class="fa-brands fa-twitter"></i>
                           </a>
-                          <a href="#insta" class="text-3xl">
+                          <a href="https://www.instagram.com/vipinyadav_14" target="_blank" class="text-3xl">
                               <i class="fa-brands fa-instagram"></i>
                           </a>
                       </div>
@@ -343,8 +359,8 @@
     <!-- Footer Section  -->
     <footer class="mb-8">
         <div class="flex items-center justify-center font-sans gap-1 text-lg">
-            <p class="text-xs text-neutral-300 font-light"><i class="fa-regular fa-copyright"></i></p>
-            <h2 class="text-neutral-50">Made with ❤ by Vipin Yadav</h2>
+            <p class="text-[8px] md:text-[10px] top-0 left-0 text-neutral-300 font-light"><i class="fa-regular fa-copyright"></i></p>
+            <h2 class="text-neutral-50 text-[12px] md:text-lg">Made with ❤ by Vipin Yadav</h2>
         </div>
     </footer>
 
