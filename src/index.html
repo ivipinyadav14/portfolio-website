@@ -67,7 +67,7 @@
                     <a href="./assets/vipin-resume.pdf" download="vipin-resume">
                         <button class="w-28 h-10 mr-6 rounded-xl bg-gray-800 text-gray-300 drop-shadow-[0_5px_5px_rgba(255,255,255,0.15)] border-solid border-2 border-gray-600 hover:bg-gray-700 hover:border-gray-500 hover:text-white active:bg-gray-700 active:border-gray-600 active:text-gray-200">
                             Resume
-                            <i class="fa-solid fa-arrow-down text-xs ml-1"></i>
+                            <i class="fa-solid fa-arrow-down text-sm ml-1"></i>
                         </button>
                     </a>
                     
@@ -282,81 +282,68 @@
             </div>
 
             <div class="mb-20 md:mb-36">
-                <div class="flex flex-row flex-wrap-reverse">
+            <div class="flex flex-row flex-wrap-reverse">
                   
-                  <!-- Social Contacts  -->
-                  <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+                <!-- Social Contacts  -->
+                <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
                     <h2 class="mb-6 text-2xl font-semibold text-neutral-200">Contact Info:</h2>
                     <div class="mb-4 flex items-center gap-4 text-neutral-300">
-                      <i class="fa-solid fa-location-dot"></i>
-                      <p>Bhubaneswar, India - 751024</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bhubaneswar, India - 751024</p>
                     </div>
                     <div class="mb-4 flex items-center gap-3 text-neutral-300">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>+91-81448607##</p>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91-81448607##</p>
                     </div>
                     <div class="mb-4 flex items-center gap-4 text-neutral-300">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p>vipinyadav.work@gmail.com</p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>vipinyadav.work@gmail.com</p>
                     </div>
                     <div class="mt-24">
-                      <h2 class="mb-3 text-sm font-semibold text-neutral-200">Connect with me :</h2>
-                      <div class="flex gap-10">
-                          <a href="https://www.linkedin.com/in/ivipinyadav14/" target="_blank" class="text-3xl">
-                              <i class="fa-brands fa-linkedin"></i>
-                          </a>
-                          <a href="https://github.com/ivipinyadav14" target="_blank" class="text-3xl">
-                              <i class="fa-brands fa-github"></i>
-                          </a>
-                          <a href="https://x.com/vipinyadav_14" target="_blank" class="text-3xl">
-                              <i class="fa-brands fa-twitter"></i>
-                          </a>
-                          <a href="https://www.instagram.com/vipinyadav_14" target="_blank" class="text-3xl">
-                              <i class="fa-brands fa-instagram"></i>
-                          </a>
-                      </div>
+                        <h2 class="mb-3 text-sm font-semibold text-neutral-200">Connect with me :</h2>
+                        <div class="flex gap-10">
+                            <a href="https://www.linkedin.com/in/ivipinyadav14/" target="_blank" class="text-3xl">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/ivipinyadav14" target="_blank" class="text-3xl">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://x.com/vipinyadav_14" target="_blank" class="text-3xl">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/vipinyadav_14" target="_blank" class="text-3xl">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
                     </div>
-                  </div>
+                </div>
 
-                  <!-- Contact Form  -->
-                  <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-                    <form>
-                      <div class="relative mb-8">
-                        <input type="text"
-                          class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" />
-                        <label
-                          class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] text-neutral-400">
-                          Full Name
-                        </label>
-                      </div>
-                      <div class="relative mb-8">
-                        <input type="email"
-                          class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" />
-                        <label
-                          class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] text-neutral-400">
-                          Email Address
-                        </label>
-                      </div>
-                      <div class="relative mb-12">
-                        <textarea
-                          class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" id="textArea" rows="3"></textarea>
-                          
-                         <label for="formTextArea"
-                          class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] text-neutral-400">
-                          Write your message here...
-                        </label>
-                      </div>
+                <!-- Contact Form  -->
+                <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+                    <form onsubmit="sendMsg()">
+                        <div class="relative mb-8">
+                            <input type="text" id="name"
+                            class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" placeholder="Full Name" required />
+                        </div>
+
+                        <div class="relative mb-8">
+                            <input type="email" id="email"
+                            class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" placeholder="Email" required />
+                        </div>
+
+                        <div class="relative mb-12">
+                            <textarea id="msg"
+                            class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" id="textArea" rows="3" placeholder="Write your message here..."  autocomplete="off" required ></textarea>
+                        </div>
                       
-                      <button type="button"
-                        class="mb-6 inline-block w-full rounded-lg px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-neutral-300 border-2 border-slate-500 bg-slate-900 hover:border-slate-400 hover:text-neutral-200 active:border-slate-500 active:bg-slate-900 active:text-neutral-400">
-                        Send
-                      </button>
+                        <button type="submit"
+                            class="mb-6 inline-block w-full rounded-lg px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-neutral-300 border-2 border-slate-500 bg-slate-900 hover:border-slate-400 hover:text-neutral-200 active:border-slate-500 active:bg-slate-900 active:text-neutral-400" >
+                            Send
+                        </button>
                     </form>
-                  </div>
-
                 </div>
             </div>
-          
+            </div>
         </Section>
 
     </main>
@@ -368,6 +355,8 @@
             <h2 class="text-neutral-50 text-[12px] md:text-lg">Made with ❤ by Vipin Yadav</h2>
         </div>
     </footer>
-
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
