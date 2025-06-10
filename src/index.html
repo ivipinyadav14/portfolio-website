@@ -330,11 +330,11 @@
                     <h2 class="mb-6 text-2xl font-semibold text-neutral-200">Contact Info:</h2>
                     <div class="mb-4 flex items-center gap-4 text-neutral-300">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>Bhubaneswar, India - 751024</p>
+                        <p>Bengaluru, Karnataka, India - 560034</p>
                     </div>
                     <div class="mb-4 flex items-center gap-3 text-neutral-300">
                         <i class="fa-solid fa-phone"></i>
-                        <p>+91-81448607##</p>
+                        <p>+91 814486078*</p>
                     </div>
                     <div class="mb-4 flex items-center gap-4 text-neutral-300">
                         <i class="fa-solid fa-envelope"></i>
@@ -361,19 +361,20 @@
 
                 <!-- Contact Form  -->
                 <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-                    <form onsubmit="sendMsg()">
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="c06885aa-d029-4fa8-b779-a5951991eee0">
                         <div class="relative mb-8">
-                            <input type="text" id="name"
+                            <input type="text" name = "name" id="name"
                             class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" placeholder="Full Name" required />
                         </div>
 
                         <div class="relative mb-8">
-                            <input type="email" id="email"
+                            <input type="email" name = "email" id="email"
                             class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" placeholder="Email" required />
                         </div>
 
                         <div class="relative mb-12">
-                            <textarea id="msg"
+                            <textarea name = "message" id="msg"
                             class="min-h-[auto] w-full rounded-lg border border-solid bg-transparent py-[0.42rem] px-3 text-neutral-200" id="textArea" rows="3" placeholder="Write your message here..."  autocomplete="off" required ></textarea>
                         </div>
                       
@@ -381,6 +382,8 @@
                             class="mb-6 inline-block w-full rounded-lg px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-neutral-300 border-2 border-slate-500 bg-slate-900 hover:border-slate-400 hover:text-neutral-200 active:border-slate-500 active:bg-slate-900 active:text-neutral-400" >
                             Send
                         </button>
+
+                        <div id="result"></div>
                     </form>
                 </div>
             </div>
@@ -397,7 +400,6 @@
         </div>
     </footer>
     
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
